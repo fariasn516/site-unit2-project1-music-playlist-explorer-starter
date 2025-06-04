@@ -1,27 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Music Playlist Explorer</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <!-- Your header content here -->
+      <h1>Music Playlist Explorer</h1>
+      <nav> 
+        <ul>
+          <li> Featured </li>
+          <li> All </li>
+        </ul>
+      </nav>
     </header>
 
-    <main> 
-        <!-- Your main content here -->
+    <main>
+      <section class="playlist-cards">
+        <article class="playlist-card" onclick="openModal(samplePlaylist)">
+          <img src="assets/img/playlist.png" alt="Playlist 1" width="100px" />
+          <h2>Playlist 1</h2>
+          <p>by Nancy F.</p>
+          <p>♡ 5</p>
+        </article>
+
+        <article class="playlist-card" onclick="openModal(samplePlaylist)">
+          <img src="assets/img/playlist.png" alt="Playlist 2" width="100px" />
+          <h2>Playlist 2</h2>
+          <p>by Nancy F.</p>
+          <p>♡ 5</p>
+        </article>
+
+        <article class="playlist-card" onclick="openModal(samplePlaylist)">
+          <img src="assets/img/playlist.png" alt="Playlist 3" width="100px" />
+          <h2>Playlist 3</h2>
+          <p>by Nancy F.</p>
+          <p>♡ 5</p>
+        </article>
+
+        <article class="playlist-card" onclick="openModal(samplePlaylist)">
+          <img src="assets/img/playlist.png" alt="Playlist 4" width="100px" />
+          <h2>Playlist 4</h2>
+          <p>by Nancy F.</p>
+          <p>♡ 5</p>
+        </article>
+
+        <article class="playlist-card" onclick="openModal(samplePlaylist)">
+          <img src="assets/img/playlist.png" alt="Playlist 5" width="100px" />
+          <h2>Playlist 5</h2>
+          <p>by Nancy F.</p>
+          <p>♡ 5</p>
+        </article>
+
+        <article class="playlist-card" onclick="openModal(samplePlaylist)">
+          <img src="assets/img/playlist.png" alt="Playlist 6" width="100px" />
+          <h2>Playlist 6</h2>
+          <p>by Nancy F.</p>
+          <p>♡ 5</p>
+        </article>
+
+        <article class="playlist-card" onclick="openModal(samplePlaylist)">
+          <img src="assets/img/playlist.png" alt="Playlist 7" width="100px" />
+          <h2>Playlist 7</h2>
+          <p>by Nancy F.</p>
+          <p>♡ 5</p>
+        </article>
+
+        <article class="playlist-card" onclick="openModal(samplePlaylist)">
+          <img src="assets/img/playlist.png" alt="Playlist 8" width="100px" />
+          <h2>Playlist 8</h2>
+          <p>by Nancy F.</p>
+          <p>♡ 5</p>
+        </article>
+      </section>
     </main>
 
+    <!-- Modal Structure -->
+    <div id="playlistModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="playlistName"></h2>
+        <img id="playlistImage" src="" alt="Playlist Image" />
+        <p id="playlistCreator"></p>
+        <p id="playlistLikes"></p>
+        <ul id="playlistTracks">
+          <!-- Songs will be injected here -->
+        </ul>
+      </div>
+    </div>
+
     <footer>
-        <!-- Your footer content here -->
+      <!-- Your footer content here -->
     </footer>
     <script src="data/data.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
