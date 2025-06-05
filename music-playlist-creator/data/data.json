@@ -1,0 +1,172 @@
+[
+  {
+    "playlistID": 1,
+    "playlist_name": "Chill Vibes",
+    "playlist_author": "Nancy F.",
+    "playlist_art": "assets/img/beach-cover.png",
+    "likes": 5,
+    "songs": [
+      {
+        "name": "Rainy",
+        "artist": "Mac Miller",
+        "album": "Circles",
+        "duration": "2:45",
+        "image": "assets/img/beach-cover.png"
+      },
+      {
+        "name": "Cloudy",
+        "artist": "SZA",
+        "album": "Coldbrew",
+        "duration": "3:10",
+        "image": "assets/img/song.png"
+      }
+    ]
+  },
+  {
+    "playlistID": 2,
+    "playlist_name": "Gym",
+    "playlist_author": "Yudy G.",
+    "playlist_art": "assets/img/pink-gym.png",
+    "likes": 3,
+    "songs": [
+      {
+        "name": "Hype",
+        "artist": "Alicia Keys",
+        "album": "Waking Light",
+        "duration": "3:30",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Fien",
+        "artist": "Playboi Carti",
+        "album": "WhollataRed",
+        "duration": "4:05",
+        "image": "assets/img/song.png"
+      }
+    ]
+  },
+  {
+    "playlistID": 3,
+    "playlist_name": "Brown Noise",
+    "playlist_author": "Maryorie V.",
+    "playlist_art": "assets/img/brown-noise.png",
+    "likes": 1,
+    "songs": [
+      {
+        "name": "Brrr",
+        "artist": "Ambient Sounds",
+        "album": "Zen",
+        "duration": "2:55",
+        "image": "assets/img/song.png"
+      }
+    ]
+  },
+  {
+    "playlistID": 4,
+    "playlist_name": "Birthday Party",
+    "playlist_author": "Nancy F.",
+    "playlist_art": "assets/img/pink-party.png",
+    "likes": 5,
+    "songs": [
+      {
+        "name": "Party in the USA",
+        "artist": "Miley Cyrus",
+        "album": "Open Road",
+        "duration": "3:50",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Jungle",
+        "artist": "A Boogie With Da Hoodie",
+        "album": "Idk",
+        "duration": "2:58",
+        "image": "assets/img/song.png"
+      }
+    ]
+  },
+  {
+    "playlistID": 5,
+    "playlist_name": "Spanish",
+    "playlist_author": "Maria R.",
+    "playlist_art": "assets/img/pink-spanish.png",
+    "likes": 1,
+    "songs": [
+      {
+        "name": "Diluvio",
+        "artist": "Rauw Alejandro",
+        "album": "Rauw",
+        "duration": "3:20",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Titi Me Pregunto",
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "duration": "3:05",
+        "image": "assets/img/song.png"
+      }
+    ]
+  },
+  {
+    "playlistID": 6,
+    "playlist_name": "R&B",
+    "playlist_author": "Cristina F.",
+    "playlist_art": "assets/img/rb-pink.png",
+    "likes": 0,
+    "songs": [
+      {
+        "name": "Snooze",
+        "artist": "SZA",
+        "album": "SOS",
+        "duration": "2:40",
+        "image": "assets/img/song.png"
+      }
+    ]
+  },
+  {
+    "playlistID": 7,
+    "playlist_name": "Hiphop",
+    "playlist_author": "James A.",
+    "playlist_art": "assets/img/hiphop-pink.png",
+    "likes": 8,
+    "songs": [
+      {
+        "name": "Sickomode",
+        "artist": "Travis Scott",
+        "album": "Idk",
+        "duration": "3:00",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "One Dance",
+        "artist": "Drake",
+        "album": "Controlla",
+        "duration": "3:15",
+        "image": "assets/img/song.png"
+      }
+    ]
+  },
+  {
+    "playlistID": 8,
+    "playlist_name": "Feminine",
+    "playlist_author": "Sara H.",
+    "playlist_art": "assets/img/girly.png",
+    "likes": 2,
+    "songs": [
+      {
+        "name": "Dreams",
+        "artist": "Jhene Aiko",
+        "album": "Dare",
+        "duration": "4:00",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Float",
+        "artist": "Cloud",
+        "album": "Roll",
+        "duration": "3:40",
+        "image": "assets/img/song.png"
+      }
+    ]
+  }
+]

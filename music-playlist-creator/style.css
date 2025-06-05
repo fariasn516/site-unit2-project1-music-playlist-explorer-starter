@@ -32,7 +32,7 @@ footer {
   text-align: left;
 }
 
-.playlist-cards {
+#playlist-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -59,12 +59,6 @@ footer {
   padding-left: 10px;
 }
 
-.playlist-card-text img {
-  width: 20px;
-  height: 25px;
-  padding-top: 10px;
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -87,7 +81,7 @@ footer {
 
 .modal-content img {
   width: 100%;
-  height: auto;
+  height: 400px;
   border-radius: 6px;
 }
 
