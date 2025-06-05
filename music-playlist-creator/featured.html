@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Music Playlist Explorer</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Music Playlist Explorer</h1>
+      <nav class="navigation-bar">
+        <ul class="navigation-bar-list">
+          <li>
+            <a href="featured.html" class="navigation-bar-link active-link"
+              >Featured</a
+            >
+          </li>
+          <li><a href="index.html" class="navigation-bar-link">All</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="featured-page">
+      <div class="featured-image-and-name">
+        <img id="featuredPlaylistImage" src="" alt="Featured Playlist Image" />
+        <h2 id="featuredPlaylistName"></h2>
+      </div>
+      <div class="featured-content">
+        <p id="featuredPlaylistCreator"></p>
+        <ul id="featuredPlaylistSongs"></ul>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Music Playlist Explorer by Nancy F.</p>
+    </footer>
+    <script src="featured.js"></script>
+  </body>
+</html>

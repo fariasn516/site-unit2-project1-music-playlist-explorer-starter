@@ -116,7 +116,7 @@ function renderSongs(songs) {
     songCard.className = "song-card";
     songCard.innerHTML = `
       <img src="${song.image}" alt="${song.name}" class="song-image" />
-      <div class="song-details">
+      <div class="song-text">
         <h3>${song.name}</h3>
         <p>${song.artist}</p>
         <p>${song.album}</p>
