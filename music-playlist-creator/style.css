@@ -88,6 +88,7 @@ footer {
 .close {
   color: #aaa;
   float: right;
+  margin-bottom: 20px;
   font-size: 28px;
   font-weight: bold;
 }
