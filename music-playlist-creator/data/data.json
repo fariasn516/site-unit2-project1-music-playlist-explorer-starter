@@ -19,6 +19,20 @@
         "album": "Coldbrew",
         "duration": "3:10",
         "image": "assets/img/song.png"
+      },
+      {
+        "name": "Amp",
+        "artist": "Smino",
+        "album": "Sm",
+        "duration": "3:50",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Baby",
+        "artist": "Justin Bieber",
+        "album": "2014",
+        "duration": "2:50",
+        "image": "assets/img/song.png"
       }
     ]
   },

@@ -3,6 +3,7 @@ const span = document.getElementsByClassName("close")[0];
 const playlistCards = document.getElementById("playlist-cards");
 const playlistSongs = document.getElementById("playlistSongs");
 const likeIcon = document.getElementsByClassName("likeIcon")
+const shuffleButton = document.getElementById("shuffleButton");
 
 
 function loadPlaylists() {
@@ -95,7 +96,6 @@ function handleLikeFeature(likeIcon, likeCount, playlist) {
   }
 
   likeCount.textContent = playlist.likes;
-  console.log(`Updated playlist "${playlist.playlist_name}" likes:`, playlist.likes);
 }
 
 function openModal(playlist) {
@@ -104,14 +104,13 @@ function openModal(playlist) {
   document.getElementById("playlistImage").src = playlist.playlist_art;
 
   renderSongs(playlist.songs);
+  setupShuffleButton(playlist);
 
   modal.style.display = "block";
 }
 
-
 function renderSongs(songs) {
   playlistSongs.innerHTML = "";
-
   songs.map(song => {
     const songCard = document.createElement("li");
     songCard.className = "song-card";
@@ -126,6 +125,23 @@ function renderSongs(songs) {
     `;
     playlistSongs.appendChild(songCard);
   });
+}
+
+function setupShuffleButton(playlist) {
+  const shuffleButton = document.getElementById("shuffleButton");
+  shuffleButton.onclick = () => {
+    playlist.songs = shuffleSongList(playlist.songs);
+    renderSongs(playlist.songs);
+  };
+}
+
+// Fisher-Yates shuffle algorithm -> https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle
+function shuffleSongList(songs) {
+  for (let i = songs.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [songs[i], songs[j]] = [songs[j], songs[i]];
+  }
+  return songs;
 }
 
 

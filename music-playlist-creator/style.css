@@ -99,6 +99,16 @@ footer {
   cursor: pointer;
 }
 
+#shuffleButton {
+  background-color: #ffeef8;
+  color: black;
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
 .song-card {
   display: flex;
   align-items: center;
