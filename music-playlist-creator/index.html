@@ -11,10 +11,10 @@
   <body>
     <header>
       <h1>Music Playlist Explorer</h1>
-      <nav> 
+      <nav>
         <ul>
-          <li> Featured </li>
-          <li> All </li>
+          <li>Featured</li>
+          <li>All</li>
         </ul>
       </nav>
     </header>
@@ -22,59 +22,131 @@
     <main>
       <section class="playlist-cards">
         <article class="playlist-card" onclick="openModal(testPlaylist)">
-          <img src="assets/img/playlist.png" alt="Playlist 1" width="100px" />
-          <h2>Playlist 1</h2>
-          <p>by Nancy F.</p>
-          <p>♡ 5</p>
+          <img
+            src="assets/img/beach-cover.png"
+            alt="Playlist 1"
+            width="100px"
+          />
+          <div class="playlist-card-text">
+            <h2>Playlist 1</h2>
+            <p>Created by Nancy F.</p>
+            <p>
+              <img src="assets/img/liked.png" alt="Liked Icon" />
+              5
+            </p>
+          </div>
         </article>
 
         <article class="playlist-card" onclick="openModal(testPlaylist)">
-          <img src="assets/img/playlist.png" alt="Playlist 2" width="100px" />
-          <h2>Playlist 2</h2>
-          <p>by Nancy F.</p>
-          <p>♡ 5</p>
+          <img
+            src="assets/img/beach-cover.png"
+            alt="Playlist 2"
+            width="100px"
+          />
+          <div class="playlist-card-text">
+            <h2>Playlist 2</h2>
+            <p>Created by Nancy F.</p>
+            <p>
+              <img src="assets/img/liked.png" alt="Liked Icon" />
+              5
+            </p>
+          </div>
         </article>
 
         <article class="playlist-card" onclick="openModal(testPlaylist)">
-          <img src="assets/img/playlist.png" alt="Playlist 3" width="100px" />
-          <h2>Playlist 3</h2>
-          <p>by Nancy F.</p>
-          <p>♡ 5</p>
+          <img
+            src="assets/img/beach-cover.png"
+            alt="Playlist 3"
+            width="100px"
+          />
+          <div class="playlist-card-text">
+            <h2>Playlist 3</h2>
+            <p>Created by Nancy F.</p>
+            <p>
+              <img src="assets/img/liked.png" alt="Liked Icon" />
+              5
+            </p>
+          </div>
         </article>
 
         <article class="playlist-card" onclick="openModal(testPlaylist)">
-          <img src="assets/img/playlist.png" alt="Playlist 4" width="100px" />
-          <h2>Playlist 4</h2>
-          <p>by Nancy F.</p>
-          <p>♡ 5</p>
+          <img
+            src="assets/img/beach-cover.png"
+            alt="Playlist 4"
+            width="100px"
+          />
+          <div class="playlist-card-text">
+            <h2>Playlist 4</h2>
+            <p>Created by Nancy F.</p>
+            <p>
+              <img src="assets/img/liked.png" alt="Liked Icon" />
+              5
+            </p>
+          </div>
         </article>
 
         <article class="playlist-card" onclick="openModal(testPlaylist)">
-          <img src="assets/img/playlist.png" alt="Playlist 5" width="100px" />
-          <h2>Playlist 5</h2>
-          <p>by Nancy F.</p>
-          <p>♡ 5</p>
+          <img
+            src="assets/img/beach-cover.png"
+            alt="Playlist 5"
+            width="100px"
+          />
+          <div class="playlist-card-text">
+            <h2>Playlist 5</h2>
+            <p>Created by Nancy F.</p>
+            <p>
+              <img src="assets/img/liked.png" alt="Liked Icon" />
+              5
+            </p>
+          </div>
         </article>
 
         <article class="playlist-card" onclick="openModal(testPlaylist)">
-          <img src="assets/img/playlist.png" alt="Playlist 6" width="100px" />
-          <h2>Playlist 6</h2>
-          <p>by Nancy F.</p>
-          <p>♡ 5</p>
+          <img
+            src="assets/img/beach-cover.png"
+            alt="Playlist 6"
+            width="100px"
+          />
+          <div class="playlist-card-text">
+            <h2>Playlist 6</h2>
+            <p>Created by Nancy F.</p>
+            <p>
+              <img src="assets/img/liked.png" alt="Liked Icon" />
+              5
+            </p>
+          </div>
         </article>
 
         <article class="playlist-card" onclick="openModal(testPlaylist)">
-          <img src="assets/img/playlist.png" alt="Playlist 7" width="100px" />
-          <h2>Playlist 7</h2>
-          <p>by Nancy F.</p>
-          <p>♡ 5</p>
+          <img
+            src="assets/img/beach-cover.png"
+            alt="Playlist 7"
+            width="100px"
+          />
+          <div class="playlist-card-text">
+            <h2>Playlist 7</h2>
+            <p>Created by Nancy F.</p>
+            <p>
+              <img src="assets/img/liked.png" alt="Liked Icon" />
+              5
+            </p>
+          </div>
         </article>
 
         <article class="playlist-card" onclick="openModal(testPlaylist)">
-          <img src="assets/img/playlist.png" alt="Playlist 8" width="100px" />
-          <h2>Playlist 8</h2>
-          <p>by Nancy F.</p>
-          <p>♡ 5</p>
+          <img
+            src="assets/img/beach-cover.png"
+            alt="Playlist 8"
+            width="100px"
+          />
+          <div class="playlist-card-text">
+            <h2>Playlist 8</h2>
+            <p>Created by Nancy F.</p>
+            <p>
+              <img src="assets/img/liked.png" alt="Liked Icon" class="L" />
+              5
+            </p>
+          </div>
         </article>
       </section>
     </main>
@@ -86,13 +158,12 @@
         <h2 id="playlistName"></h2>
         <img id="playlistImage" src="" alt="Playlist Image" />
         <p id="playlistCreator"></p>
-        <ul id="playlistSongs">
-        </ul>
+        <ul id="playlistSongs" class="song-list"></ul>
       </div>
     </div>
 
     <footer>
-      <!-- Your footer content here -->
+      <p>&copy; 2025 Music Playlist Explorer. Built by Nancy F.</p>
     </footer>
     <script src="data/data.js"></script>
     <script src="script.js"></script>
