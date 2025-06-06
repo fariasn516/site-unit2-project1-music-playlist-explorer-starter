@@ -97,36 +97,36 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD
     - [ ] Editing all of a playlist's features (name, creator, AND songs)
     - [ ] Editing some of a playlist's features (name, creator, OR songs) 
 
-- [ ] **Delete Playlists**
-  - [ ] Add a delete button to each playlist tile within the grid view.
-  - [ ] When clicked, the playlist is removed from the playlist grid view.
+- [X] **Delete Playlists**
+  - [X] Add a delete button to each playlist tile within the grid view.
+  - [X] When clicked, the playlist is removed from the playlist grid view.
 
-- [ ] **Search Functionality**
-  - [ ] Implement a search bar that allows users to filter playlists by:
-    - [ ] Name 
-    - [ ] Author
-  - [ ] The search bar should include:
-    - [ ] Text input field
-    - [ ] Submit/Search Button
-    - [ ] Clear Button
-  - [ ] Playlists matching the search query in the text input are displayed in a grid view when the user:
-    - [ ] Presses the Enter Key
-    - [ ] Clicks the Submit/Search Button 
-  - [ ] User can click the clear button. When clicked:
-    - [ ] All text in the text input field is deleted
-    - [ ] All playlists in the `data.json` file are displayed in a grid view
+- [] **Search Functionality**
+  - [x] Implement a search bar that allows users to filter playlists by:
+    - [x] Name 
+    - [x] Author
+  - [x] The search bar should include:
+    - [x] Text input field
+    - [x] Submit/Search Button
+    - [x] Clear Button
+  - [x] Playlists matching the search query in the text input are displayed in a grid view when the user:
+    - [x] Presses the Enter Key
+    - [x] Clicks the Submit/Search Button 
+  - [x] User can click the clear button. When clicked:
+    - [x] All text in the text input field is deleted
+    - [x] All playlists in the `data.json` file are displayed in a grid view
     - [ ] **Optional:** If the Add Playlist, Edit Existing Playlist, or Delete Playlist stretch features were implemented:
       - [ ] If users can add a playlist, added playlists should be included in search results.
       - [ ] If users can edit a playlist, search results should reflect the latest edits to each playlist.
-      - [ ] If users can delete a playlist, deleted playlists should no longer be included in search results.
+      - [x] If users can delete a playlist, deleted playlists should no longer be included in search results.
       - **Note:** You will not be graded on the implementation of this optional subfeature to keep your grade of this stretch feature independent of your implementation of other stretch features. However, we highly suggest including this in your implementation to model realistic behavior of real applications. 
 
-- [ ] **Sorting Options**
-  - [ ] Implement a drop-down or button options that allow users to sort the playlist by:
-    - [ ] Name (A-Z alphabetically)
-    - [ ] Number of likes (descending order)
-    - [ ] Date added (most recent to oldest, chronologically)
-  - [ ] Selecting a sort option should result in a reordering based on the selected sort while maintaining a grid view.
+- [x] **Sorting Options**
+  - [x] Implement a drop-down or button options that allow users to sort the playlist by:
+    - [x] Name (A-Z alphabetically)
+    - [x] Number of likes (descending order)
+    - [x] Date added (most recent to oldest, chronologically)
+  - [x] Selecting a sort option should result in a reordering based on the selected sort while maintaining a grid view.
 
 ### Walkthrough Video
 
@@ -138,20 +138,26 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+  * Yes, the labs were helpful in preparing me for most of the assignment. I do feel that we didn’t cover error handling in data fetching very much, which would have been useful. I also struggled a bit with the technical details of building forms and managing form submission behavior.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+  * If I had more time, I would have restructured the Featured page with a better layout. Also, I would have wanted to integrate local storage or a database to make playlist deletions and edits persist.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+  * Overall, the demo went smoothly, but I think it could’ve been more engaging with additional animations to bring the UI to life. I also wish I had implemented a mouse “grabber” or hover effect to signal that playlist cards were clickable. I saw a peer use animated transitions very effectively, and I’d love to explore adding something like that in the future.
 
 ### Open-source libraries used
 
-- Add any links to open-source libraries used in your project.
+- Implemented the [Fisher–Yates Shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) algorithm to enable randomization of playlist songs.
+- Used **Metamate** (Meta's internal AI) to:
+  - Generate sample data for `data.json`
+  - Create color palettes
+  - Assist with syntax lookups for unfamiliar JavaScript functions
 
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+
+* Shout out to **Greg** for giving me helpful advice on prioritizing functionality first, then focusing on design.
