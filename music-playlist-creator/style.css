@@ -52,6 +52,11 @@ main {
   flex: 1;
 }
 
+.search-bar{
+  padding: 10px;
+  margin-left: 10px;
+}
+
 footer {
   background-color: white;
   color: grey;

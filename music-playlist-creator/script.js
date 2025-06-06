@@ -173,5 +173,29 @@ window.onclick = function (event) {
   }
 };
 
+function handleSearching(query) {
+  const reaffirmLower = query.toLowerCase();
+  const filteredPlaylists = playlists.filter(playlist =>
+    playlist.playlist_name.toLowerCase().includes(reaffirmLower) ||
+    playlist.playlist_author.toLowerCase().includes(reaffirmLower)
+  );
+  renderFilteredPlaylists(filteredPlaylists);
+}
+
+document.getElementById("searchInput").addEventListener("input", (e) => {
+  handleSearching(e.target.value);
+});
+
+document.getElementById("searchInput").addEventListener("keydown", function(e) {
+  if (e.key === "Enter") {
+    e.preventDefault(); 
+    return false;     
+  }
+});
+
+function renderFilteredPlaylists(filteredList) {
+  playlistCards.innerHTML = "";
+  filteredList.forEach(playlist => createPlaylistCard(playlist));
+}
 
 loadPlaylists();
