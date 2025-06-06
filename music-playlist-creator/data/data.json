@@ -7,31 +7,31 @@
     "likes": 5,
     "songs": [
       {
-        "name": "Rainy",
-        "artist": "Mac Miller",
-        "album": "Circles",
-        "duration": "2:45",
+        "name": "Sunflower",
+        "artist": "Post Malone & Swae Lee",
+        "album": "Spider-Man: Into the Spider-Verse",
+        "duration": "2:38",
         "image": "assets/img/beach-cover.png"
       },
       {
-        "name": "Cloudy",
-        "artist": "SZA",
-        "album": "Coldbrew",
-        "duration": "3:10",
+        "name": "Lost",
+        "artist": "Frank Ocean",
+        "album": "Channel Orange",
+        "duration": "4:12",
         "image": "assets/img/song.png"
       },
       {
-        "name": "Amp",
-        "artist": "Smino",
-        "album": "Sm",
-        "duration": "3:50",
+        "name": "Redbone",
+        "artist": "Childish Gambino",
+        "album": "Awaken, My Love!",
+        "duration": "5:27",
         "image": "assets/img/song.png"
       },
       {
-        "name": "Baby",
-        "artist": "Justin Bieber",
-        "album": "2014",
-        "duration": "2:50",
+        "name": "Lover Is a Day",
+        "artist": "Cuco",
+        "album": "Songs4u",
+        "duration": "6:20",
         "image": "assets/img/song.png"
       }
     ]
@@ -44,17 +44,38 @@
     "likes": 3,
     "songs": [
       {
-        "name": "Hype",
-        "artist": "Alicia Keys",
-        "album": "Waking Light",
-        "duration": "3:30",
+        "name": "Stronger",
+        "artist": "Kanye West",
+        "album": "Graduation",
+        "duration": "5:12",
         "image": "assets/img/song.png"
       },
       {
-        "name": "Fien",
-        "artist": "Playboi Carti",
-        "album": "WhollataRed",
-        "duration": "4:05",
+        "name": "Lose Yourself",
+        "artist": "Eminem",
+        "album": "8 Mile",
+        "duration": "5:26",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Uptown Funk",
+        "artist": "Mark Ronson ft. Bruno Mars",
+        "album": "Uptown Special",
+        "duration": "4:30",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "INDUSTRY BABY",
+        "artist": "Lil Nas X, Jack Harlow",
+        "album": "MONTERO",
+        "duration": "3:32",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Eye of the Tiger",
+        "artist": "Survivor",
+        "album": "Eye of the Tiger",
+        "duration": "4:04",
         "image": "assets/img/song.png"
       }
     ]
@@ -67,10 +88,45 @@
     "likes": 1,
     "songs": [
       {
-        "name": "Brrr",
-        "artist": "Ambient Sounds",
-        "album": "Zen",
-        "duration": "2:55",
+        "name": "Brown Noise 8 Hours",
+        "artist": "Relaxing White Noise",
+        "album": "Brown Noise",
+        "duration": "8:00:00",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Deep Brown Noise",
+        "artist": "Noise & Nature",
+        "album": "Ambient Focus",
+        "duration": "3:00:00",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Brown Noise for Studying",
+        "artist": "Sleepy Sounds",
+        "album": "Focus Tones",
+        "duration": "2:00:00",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Brown Noise Sleep",
+        "artist": "Calm Collective",
+        "album": "Sleep Tones",
+        "duration": "1:30:00",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Low Brown Hum",
+        "artist": "Zen Audio",
+        "album": "Tranquility",
+        "duration": "1:00:00",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Soft Brown Stream",
+        "artist": "Nature Sounds",
+        "album": "Earth Tones",
+        "duration": "45:00",
         "image": "assets/img/song.png"
       }
     ]
@@ -85,15 +141,29 @@
       {
         "name": "Party in the USA",
         "artist": "Miley Cyrus",
-        "album": "Open Road",
-        "duration": "3:50",
+        "album": "The Time of Our Lives",
+        "duration": "3:22",
         "image": "assets/img/song.png"
       },
       {
-        "name": "Jungle",
-        "artist": "A Boogie With Da Hoodie",
-        "album": "Idk",
-        "duration": "2:58",
+        "name": "TiK ToK",
+        "artist": "Kesha",
+        "album": "Animal",
+        "duration": "3:20",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Don’t Stop the Music",
+        "artist": "Rihanna",
+        "album": "Good Girl Gone Bad",
+        "duration": "4:27",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Yeah!",
+        "artist": "Usher ft. Lil Jon & Ludacris",
+        "album": "Confessions",
+        "duration": "4:10",
         "image": "assets/img/song.png"
       }
     ]
@@ -106,17 +176,38 @@
     "likes": 1,
     "songs": [
       {
-        "name": "Diluvio",
-        "artist": "Rauw Alejandro",
-        "album": "Rauw",
-        "duration": "3:20",
+        "name": "Titi Me Preguntó",
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "duration": "4:03",
         "image": "assets/img/song.png"
       },
       {
-        "name": "Titi Me Pregunto",
-        "artist": "Bad Bunny",
-        "album": "Un Verano Sin Ti",
-        "duration": "3:05",
+        "name": "Pepas",
+        "artist": "Farruko",
+        "album": "La 167",
+        "duration": "4:44",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Provenza",
+        "artist": "Karol G",
+        "album": "Mañana Será Bonito",
+        "duration": "3:29",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Baila Baila Baila",
+        "artist": "Ozuna",
+        "album": "Nibiru",
+        "duration": "2:57",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Despacito",
+        "artist": "Luis Fonsi ft. Daddy Yankee",
+        "album": "Vida",
+        "duration": "3:48",
         "image": "assets/img/song.png"
       }
     ]
@@ -132,7 +223,35 @@
         "name": "Snooze",
         "artist": "SZA",
         "album": "SOS",
-        "duration": "2:40",
+        "duration": "3:21",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Earned It",
+        "artist": "The Weeknd",
+        "album": "Fifty Shades of Grey",
+        "duration": "4:37",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "We Belong Together",
+        "artist": "Mariah Carey",
+        "album": "The Emancipation of Mimi",
+        "duration": "3:21",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Come Through",
+        "artist": "H.E.R. ft. Chris Brown",
+        "album": "Back of My Mind",
+        "duration": "3:43",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Location",
+        "artist": "Khalid",
+        "album": "American Teen",
+        "duration": "3:39",
         "image": "assets/img/song.png"
       }
     ]
@@ -145,17 +264,45 @@
     "likes": 8,
     "songs": [
       {
-        "name": "Sickomode",
+        "name": "SICKO MODE",
         "artist": "Travis Scott",
-        "album": "Idk",
-        "duration": "3:00",
+        "album": "ASTROWORLD",
+        "duration": "5:12",
         "image": "assets/img/song.png"
       },
       {
-        "name": "One Dance",
+        "name": "HUMBLE.",
+        "artist": "Kendrick Lamar",
+        "album": "DAMN.",
+        "duration": "2:57",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "God's Plan",
         "artist": "Drake",
-        "album": "Controlla",
-        "duration": "3:15",
+        "album": "Scorpion",
+        "duration": "3:19",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Bad and Boujee",
+        "artist": "Migos ft. Lil Uzi Vert",
+        "album": "Culture",
+        "duration": "5:33",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Mask Off",
+        "artist": "Future",
+        "album": "Future",
+        "duration": "3:24",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Nonstop",
+        "artist": "Drake",
+        "album": "Scorpion",
+        "duration": "3:58",
         "image": "assets/img/song.png"
       }
     ]
@@ -168,17 +315,45 @@
     "likes": 2,
     "songs": [
       {
-        "name": "Dreams",
-        "artist": "Jhene Aiko",
-        "album": "Dare",
-        "duration": "4:00",
+        "name": "good 4 u",
+        "artist": "Olivia Rodrigo",
+        "album": "SOUR",
+        "duration": "2:58",
         "image": "assets/img/song.png"
       },
       {
-        "name": "Float",
-        "artist": "Cloud",
-        "album": "Roll",
-        "duration": "3:40",
+        "name": "Flowers",
+        "artist": "Miley Cyrus",
+        "album": "Endless Summer Vacation",
+        "duration": "3:21",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Truth Hurts",
+        "artist": "Lizzo",
+        "album": "Cuz I Love You",
+        "duration": "2:53",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "Run the World (Girls)",
+        "artist": "Beyoncé",
+        "album": "4",
+        "duration": "3:56",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "No Tears Left to Cry",
+        "artist": "Ariana Grande",
+        "album": "Sweetener",
+        "duration": "3:25",
+        "image": "assets/img/song.png"
+      },
+      {
+        "name": "IDC",
+        "artist": "Dua Lipa",
+        "album": "Dua Lipa",
+        "duration": "3:38",
         "image": "assets/img/song.png"
       }
     ]
