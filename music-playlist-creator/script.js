@@ -4,14 +4,15 @@ const playlistCards = document.getElementById("playlist-cards");
 const playlistSongs = document.getElementById("playlistSongs");
 const likeIcon = document.getElementsByClassName("likeIcon")
 const shuffleButton = document.getElementById("shuffleButton");
-
+let playlists = [];
 
 function loadPlaylists() {
   fetch("data/data.json")
     .then(response => response.json())
-    .then(playlists => {
-      // need to add error catcher after !!!!!!!!!!!!!
-      playlists.map(playlist => createPlaylistCard(playlist))
+    .then(data => {
+      // this is for current session data to add, delete, and edit
+      playlists = data;
+      playlists.forEach(playlist => createPlaylistCard(playlist));
     });
 };
 
@@ -21,24 +22,28 @@ function createPlaylistCard(playlist) {
   card.onclick = () => openModal(playlist);
 
   card.innerHTML = `
-    <img src="${playlist.playlist_art}" alt="${playlist.playlist_name}" />
-    <div class="playlist-card-text">
-      <h3>${playlist.playlist_name}</h3>
-      <p>by ${playlist.playlist_author}</p>
-    </div>
+  <div class="playlist-cover-container">
+    <img src="${playlist.playlist_art}" alt="${playlist.playlist_name} Cover" />
+    <button class="delete-playlist-button">&times;</button>
+  </div>
+  <div class="playlist-card-text">
+    <h3>${playlist.playlist_name}</h3>
+    <p>by ${playlist.playlist_author}</p>
+  </div>
   `;
 
   createLikeFeature(playlist, card)
+  handleDeletePlaylist(playlist, card);
 
   playlistCards.appendChild(card);
 }
 
 function createLikeFeature(playlist, card) {
-  const likeContainer = document.createElement("p");
+  const likeContainer = document.createElement("section");
   likeContainer.className = "like-container";
 
-  const likeIcon = document.createElement("span");
-  likeIcon.className = "like-icon";
+  const likeIcon = document.createElement("button");
+  likeIcon.className = "like-button";
   likeIcon.textContent = "♡ ";
   likeIcon.dataset.liked = "false";
 
@@ -57,45 +62,55 @@ function createLikeFeature(playlist, card) {
   });
 }
 
-function handleLikeFeature(likeIcon, likeCount, playlist) {
-  const isLiked = likeIcon.dataset.liked === "true";
+function handleLikeFeature(likeButton, likeCount, playlist) {
+  const isLiked = likeButton.dataset.liked === "true";
 
   if (isLiked) {
     playlist.likes--;
-    
-    const likedString = document.createElement("span");
-    likedString.textContent = "♡ ";
-    likedString.className = "like-icon";
-    likedString.dataset.liked = "false";
+    const unlikedBtn = document.createElement("button");
+    unlikedBtn.className = "like-button";
+    unlikedBtn.textContent = "♡ ";
+    unlikedBtn.dataset.liked = "false";
 
-    likedString.addEventListener("click", (e) => {
+    unlikedBtn.addEventListener("click", (e) => {
       e.stopPropagation();
-      handleLikeFeature(likedString, likeCount, playlist);
+      handleLikeFeature(unlikedBtn, likeCount, playlist);
     });
 
-    likeIcon.replaceWith(likedString);
-
+    likeButton.replaceWith(unlikedBtn);
   } else {
     playlist.likes++;
+    const likedBtn = document.createElement("button");
+    likedBtn.className = "like-button";
+    likedBtn.dataset.liked = "true";
 
     const likedImg = document.createElement("img");
     likedImg.src = "assets/img/liked.png";
     likedImg.alt = "Liked Icon";
-    // CHANGE THIS TO CSS
     likedImg.style.width = "20px";
     likedImg.style.height = "20px";
-    likedImg.className = "like-icon";
-    likedImg.dataset.liked = "true";
+    likedImg.className = "liked-icon"
 
-    likedImg.addEventListener("click", (e) => {
+    likedBtn.appendChild(likedImg);
+
+    likedBtn.addEventListener("click", (e) => {
       e.stopPropagation();
-      handleLikeFeature(likedImg, likeCount, playlist);
+      handleLikeFeature(likedBtn, likeCount, playlist);
     });
 
-    likeIcon.replaceWith(likedImg);
+    likeButton.replaceWith(likedBtn);
   }
 
   likeCount.textContent = playlist.likes;
+}
+
+function handleDeletePlaylist(playlist, card) {
+  const deleteButton = card.querySelector(".delete-playlist-button");
+  deleteButton.addEventListener("click", (e) => {
+    e.stopPropagation();
+    playlists = playlists.filter(p => p.playlistID !== playlist.playlistID);
+    card.remove();
+  });
 }
 
 function openModal(playlist) {
@@ -115,13 +130,17 @@ function renderSongs(songs) {
     const songCard = document.createElement("li");
     songCard.className = "song-card";
     songCard.innerHTML = `
-      <img src="${song.image}" alt="${song.name}" class="song-image" />
-      <div class="song-text">
-        <h3>${song.name}</h3>
-        <p>${song.artist}</p>
-        <p>${song.album}</p>
-        <p>${song.duration}</p>
-      </div>
+      <img src="${song.image}" alt="${song.name} Cover" class="song-image" />
+      <div class="song-general">
+    <p class="song-title">${song.name}</p>
+    <div class="song-details">
+      <p class="song-artist">${song.artist}</p>
+      <p class="song-album">${song.album}</p>
+    </div>
+  </div>
+  <div class="song-duration">
+    <span>${song.duration}</span>
+  </div>
     `;
     playlistSongs.appendChild(songCard);
   });

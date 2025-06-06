@@ -31,10 +31,16 @@
     <section id="playlistModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <img id="playlistImage" src="" alt="Playlist Image" />
-        <button id="shuffleButton">Shuffle</button>
-        <h2 id="playlistName"></h2>
-        <p id="playlistCreator"></p>
+        <div class="modal-header">
+          <div class="modal-image">
+            <img id="playlistImage" src="" alt="Playlist Image" />
+            <button id="shuffleButton">Shuffle</button>
+          </div>
+          <div class="modal-info">
+            <h2 id="playlistName"></h2>
+            <p id="playlistCreator"></p>
+          </div>
+        </div>
         <ul id="playlistSongs" class="song-list"></ul>
       </div>
     </section>
