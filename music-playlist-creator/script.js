@@ -28,7 +28,8 @@ function createPlaylistCard(playlist) {
   </div>
   <div class="playlist-card-text">
     <h3>${playlist.playlist_name}</h3>
-    <p>by ${playlist.playlist_author}</p>
+    <p class="creator">by ${playlist.playlist_author}</p>
+    <p class="date-added">added on ${playlist.dateAdded}</p>
   </div>
   `;
 
@@ -67,22 +68,22 @@ function handleLikeFeature(likeButton, likeCount, playlist) {
 
   if (isLiked) {
     playlist.likes--;
-    const unlikedBtn = document.createElement("button");
-    unlikedBtn.className = "like-button";
-    unlikedBtn.textContent = "♡ ";
-    unlikedBtn.dataset.liked = "false";
+    const unlikedButton = document.createElement("button");
+    unlikedButton.className = "like-button";
+    unlikedButton.textContent = "♡ ";
+    unlikedButton.dataset.liked = "false";
 
-    unlikedBtn.addEventListener("click", (e) => {
+    unlikedButton.addEventListener("click", (e) => {
       e.stopPropagation();
-      handleLikeFeature(unlikedBtn, likeCount, playlist);
+      handleLikeFeature(unlikedButton, likeCount, playlist);
     });
 
-    likeButton.replaceWith(unlikedBtn);
+    likeButton.replaceWith(unlikedButton);
   } else {
     playlist.likes++;
-    const likedBtn = document.createElement("button");
-    likedBtn.className = "like-button";
-    likedBtn.dataset.liked = "true";
+    const likedButton = document.createElement("button");
+    likedButton.className = "like-button";
+    likedButton.dataset.liked = "true";
 
     const likedImg = document.createElement("img");
     likedImg.src = "assets/img/liked.png";
@@ -91,14 +92,14 @@ function handleLikeFeature(likeButton, likeCount, playlist) {
     likedImg.style.height = "20px";
     likedImg.className = "liked-icon"
 
-    likedBtn.appendChild(likedImg);
+    likedButton.appendChild(likedImg);
 
-    likedBtn.addEventListener("click", (e) => {
+    likedButton.addEventListener("click", (e) => {
       e.stopPropagation();
-      handleLikeFeature(likedBtn, likeCount, playlist);
+      handleLikeFeature(likedButton, likeCount, playlist);
     });
 
-    likeButton.replaceWith(likedBtn);
+    likeButton.replaceWith(likedButton);
   }
 
   likeCount.textContent = playlist.likes;
@@ -191,6 +192,22 @@ document.getElementById("searchInput").addEventListener("keydown", function(e) {
     e.preventDefault(); 
     return false;     
   }
+});
+
+function handleSort(optionSelected) {
+  if (optionSelected === "name") {
+    playlists.sort((playlist1, playlist2) => playlist1.playlist_name.localeCompare(playlist2.playlist_name));
+  } else if (optionSelected === "likes") {
+    playlists.sort((playlist1, playlist2) => playlist2.likes - playlist1.likes);
+  } else if (optionSelected === "date") {
+    playlists.sort((playlist1, playlist2) => new Date(playlist2.dateAdded) - new Date(playlist1.dateAdded));
+  }
+
+  renderFilteredPlaylists(playlists);
+}
+
+document.getElementById("sortOptions").addEventListener("change", (e) => {
+  handleSort(e.target.value);
 });
 
 function renderFilteredPlaylists(filteredList) {

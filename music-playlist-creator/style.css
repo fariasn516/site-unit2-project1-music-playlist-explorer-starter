@@ -57,6 +57,11 @@ main {
   margin-left: 10px;
 }
 
+.sorting-function {
+  padding: 10px;
+  margin-left: 10px;
+}
+
 footer {
   background-color: white;
   color: grey;
@@ -78,7 +83,7 @@ footer {
 .playlist-card {
   background-color: white;
   width: 300px;
-  height: 380px;
+  height: 400px;
   text-align: left;
   border-radius: 10px;
   box-shadow: 0 1px 5px black;
@@ -117,6 +122,16 @@ footer {
 
 .playlist-card-text {
   padding-left: 10px;
+}
+
+.creator {
+  margin:0;
+}
+
+.date-added {
+  font-size: 12px;
+  color: grey;
+  margin-bottom: 10px;
 }
 
 .like-button {

@@ -1,170 +1,174 @@
 [
-  {
+   {
     "playlistID": 1,
     "playlist_name": "Chill Vibes",
     "playlist_author": "Nancy F.",
     "playlist_art": "assets/img/beach-cover.png",
     "likes": 5,
+    "dateAdded": "2024-04-01",
     "songs": [
       {
         "name": "Sunflower",
         "artist": "Post Malone & Swae Lee",
         "album": "Spider-Man: Into the Spider-Verse",
         "duration": "2:38",
-        "image": "assets/img/beach-cover.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Lost",
         "artist": "Frank Ocean",
         "album": "Channel Orange",
         "duration": "4:12",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Redbone",
         "artist": "Childish Gambino",
         "album": "Awaken, My Love!",
         "duration": "5:27",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Lover Is a Day",
         "artist": "Cuco",
         "album": "Songs4u",
         "duration": "6:20",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       }
     ]
   },
-  {
+   {
     "playlistID": 2,
     "playlist_name": "Gym",
     "playlist_author": "Yudy G.",
     "playlist_art": "assets/img/pink-gym.png",
     "likes": 3,
+    "dateAdded": "2024-05-03",
     "songs": [
       {
         "name": "Stronger",
         "artist": "Kanye West",
         "album": "Graduation",
         "duration": "5:12",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Lose Yourself",
         "artist": "Eminem",
         "album": "8 Mile",
         "duration": "5:26",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Uptown Funk",
         "artist": "Mark Ronson ft. Bruno Mars",
         "album": "Uptown Special",
         "duration": "4:30",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "INDUSTRY BABY",
         "artist": "Lil Nas X, Jack Harlow",
         "album": "MONTERO",
         "duration": "3:32",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Eye of the Tiger",
         "artist": "Survivor",
         "album": "Eye of the Tiger",
         "duration": "4:04",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       }
     ]
   },
-  {
+ {
     "playlistID": 3,
     "playlist_name": "Brown Noise",
     "playlist_author": "Maryorie V.",
     "playlist_art": "assets/img/brown-noise.png",
     "likes": 1,
+    "dateAdded": "2024-05-01",
     "songs": [
       {
         "name": "Brown Noise 8 Hours",
         "artist": "Relaxing White Noise",
         "album": "Brown Noise",
         "duration": "8:00:00",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Deep Brown Noise",
         "artist": "Noise & Nature",
         "album": "Ambient Focus",
         "duration": "3:00:00",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Brown Noise for Studying",
         "artist": "Sleepy Sounds",
         "album": "Focus Tones",
         "duration": "2:00:00",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Brown Noise Sleep",
         "artist": "Calm Collective",
         "album": "Sleep Tones",
         "duration": "1:30:00",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Low Brown Hum",
         "artist": "Zen Audio",
         "album": "Tranquility",
         "duration": "1:00:00",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Soft Brown Stream",
         "artist": "Nature Sounds",
         "album": "Earth Tones",
         "duration": "45:00",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       }
     ]
   },
   {
-    "playlistID": 4,
+   "playlistID": 4,
     "playlist_name": "Birthday Party",
     "playlist_author": "Nancy F.",
     "playlist_art": "assets/img/pink-party.png",
     "likes": 5,
+    "dateAdded": "2024-05-07",
     "songs": [
       {
         "name": "Party in the USA",
         "artist": "Miley Cyrus",
         "album": "The Time of Our Lives",
         "duration": "3:22",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "TiK ToK",
         "artist": "Kesha",
         "album": "Animal",
         "duration": "3:20",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Don’t Stop the Music",
         "artist": "Rihanna",
         "album": "Good Girl Gone Bad",
         "duration": "4:27",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Yeah!",
         "artist": "Usher ft. Lil Jon & Ludacris",
         "album": "Confessions",
         "duration": "4:10",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       }
     ]
   },
@@ -174,41 +178,42 @@
     "playlist_author": "Maria R.",
     "playlist_art": "assets/img/pink-spanish.png",
     "likes": 1,
+    "dateAdded": "2024-05-10",
     "songs": [
       {
         "name": "Titi Me Preguntó",
         "artist": "Bad Bunny",
         "album": "Un Verano Sin Ti",
         "duration": "4:03",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Pepas",
         "artist": "Farruko",
         "album": "La 167",
         "duration": "4:44",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Provenza",
         "artist": "Karol G",
         "album": "Mañana Será Bonito",
         "duration": "3:29",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Baila Baila Baila",
         "artist": "Ozuna",
         "album": "Nibiru",
         "duration": "2:57",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Despacito",
         "artist": "Luis Fonsi ft. Daddy Yankee",
         "album": "Vida",
         "duration": "3:48",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       }
     ]
   },
@@ -218,41 +223,42 @@
     "playlist_author": "Cristina F.",
     "playlist_art": "assets/img/rb-pink.png",
     "likes": 0,
+    "dateAdded": "2023-05-12",
     "songs": [
       {
         "name": "Snooze",
         "artist": "SZA",
         "album": "SOS",
         "duration": "3:21",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Earned It",
         "artist": "The Weeknd",
         "album": "Fifty Shades of Grey",
         "duration": "4:37",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "We Belong Together",
         "artist": "Mariah Carey",
         "album": "The Emancipation of Mimi",
         "duration": "3:21",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Come Through",
         "artist": "H.E.R. ft. Chris Brown",
         "album": "Back of My Mind",
         "duration": "3:43",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Location",
         "artist": "Khalid",
         "album": "American Teen",
         "duration": "3:39",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       }
     ]
   },
@@ -262,99 +268,101 @@
     "playlist_author": "James A.",
     "playlist_art": "assets/img/hiphop-pink.png",
     "likes": 8,
+    "dateAdded": "2024-05-15",
     "songs": [
       {
         "name": "SICKO MODE",
         "artist": "Travis Scott",
         "album": "ASTROWORLD",
         "duration": "5:12",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "HUMBLE.",
         "artist": "Kendrick Lamar",
         "album": "DAMN.",
         "duration": "2:57",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "God's Plan",
         "artist": "Drake",
         "album": "Scorpion",
         "duration": "3:19",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Bad and Boujee",
         "artist": "Migos ft. Lil Uzi Vert",
         "album": "Culture",
         "duration": "5:33",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Mask Off",
         "artist": "Future",
         "album": "Future",
         "duration": "3:24",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Nonstop",
         "artist": "Drake",
         "album": "Scorpion",
         "duration": "3:58",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       }
     ]
   },
   {
-    "playlistID": 8,
+   "playlistID": 8,
     "playlist_name": "Feminine",
     "playlist_author": "Sara H.",
     "playlist_art": "assets/img/girly.png",
     "likes": 2,
+    "dateAdded": "2025-05-17",
     "songs": [
       {
         "name": "good 4 u",
         "artist": "Olivia Rodrigo",
         "album": "SOUR",
         "duration": "2:58",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Flowers",
         "artist": "Miley Cyrus",
         "album": "Endless Summer Vacation",
         "duration": "3:21",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Truth Hurts",
         "artist": "Lizzo",
         "album": "Cuz I Love You",
         "duration": "2:53",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "Run the World (Girls)",
         "artist": "Beyoncé",
         "album": "4",
         "duration": "3:56",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "No Tears Left to Cry",
         "artist": "Ariana Grande",
         "album": "Sweetener",
         "duration": "3:25",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       },
       {
         "name": "IDC",
         "artist": "Dua Lipa",
         "album": "Dua Lipa",
         "duration": "3:38",
-        "image": "assets/img/song.png"
+        "image": "assets/img/pink-song.jpg"
       }
     ]
   }

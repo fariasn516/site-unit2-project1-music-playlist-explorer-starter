@@ -32,10 +32,23 @@
           <input
             type="search"
             id="searchInput"
-            placeholder="By name or artist..."
+            placeholder="By name or creator..."
           />
         </form>
       </section>
+
+      <section class="sorting-function">
+        <form class="sort-form">
+          <label for="sortOptions">Sort by:</label>
+          <select id="sortOptions" name="sort">
+            <option value="default">Default</option>
+            <option value="name">Playlist Name (A-Z)</option>
+            <option value="likes">Likes (High → Low)</option>
+            <option value="date">Date Added (Newest)</option>
+          </select>
+        </form>
+      </section>
+
       <section id="playlist-cards"></section>
     </main>
 
