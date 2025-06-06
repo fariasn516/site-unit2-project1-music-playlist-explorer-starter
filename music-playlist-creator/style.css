@@ -26,7 +26,7 @@ header {
 }
 
 .navigation-bar-list {
-  list-style: none;     
+  list-style: none;
   display: flex;
   gap: 20px;
   margin: 0;
@@ -40,7 +40,7 @@ header {
 
 .navigation-bar-link:hover,
 .navigation-bar-link:focus {
-  color:grey;
+  color: grey;
 }
 
 .active-link {
@@ -52,7 +52,7 @@ main {
   flex: 1;
 }
 
-.search-bar{
+.search-bar {
   padding: 10px;
   margin-left: 10px;
 }
@@ -125,7 +125,7 @@ footer {
 }
 
 .creator {
-  margin:0;
+  margin: 0;
 }
 
 .date-added {
@@ -210,7 +210,7 @@ footer {
   cursor: pointer;
 }
 
-#playlistSongs{
+#playlistSongs {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -225,7 +225,7 @@ footer {
   padding: 8px 12px;
   box-shadow: 0 1px 5px grey;
   margin: 20px 0;
-  height: 70px;     
+  height: 70px;
 }
 
 .song-card img {
@@ -276,10 +276,10 @@ footer {
   flex-wrap: wrap;
 }
 
-.featured-image-and-name{
+.featured-image-and-name {
   flex: 1;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   text-align: center;
 }
 
@@ -289,7 +289,7 @@ footer {
 
 #featuredPlaylistImage {
   width: 100%;
-  max-width: 500px;    
+  max-width: 500px;
   aspect-ratio: 1 / 1;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -319,7 +319,6 @@ footer {
 
 .featured-song-card-text p {
   font-size: 12px;
-  color: grey; 
+  color: grey;
   margin: 2px;
 }
-
