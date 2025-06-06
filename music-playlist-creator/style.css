@@ -52,9 +52,23 @@ main {
   flex: 1;
 }
 
-.search-bar {
+.search-bar-box {
   padding: 10px;
   margin-left: 10px;
+}
+
+#searchBar button {
+  background-color: #f8cce9;
+  color: black;
+  border: 1px solid #e5b6d2;
+  border-radius: 5px;
+  padding: 2px 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#searchBar button:hover {
+  background-color: #f3b9e1;
 }
 
 .sorting-function {
@@ -88,6 +102,12 @@ footer {
   border-radius: 10px;
   box-shadow: 0 1px 5px black;
 }
+
+.playlist-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px black;
+}
+
 .playlist-cover-container {
   position: relative;
   width: 100%;

@@ -4,6 +4,7 @@ const playlistCards = document.getElementById("playlist-cards");
 const playlistSongs = document.getElementById("playlistSongs");
 const likeIcon = document.getElementsByClassName("likeIcon")
 const shuffleButton = document.getElementById("shuffleButton");
+const searchInput = document.getElementById("searchInput");
 let playlists = [];
 
 // Load all playlists from the JSON file and render them to the page
@@ -151,7 +152,7 @@ function renderSongs(songs) {
   });
 }
 
-// Hook up shuffle button so that songs get randomly reordered
+// Create shuffle button so that songs get randomly reordered
 function setupShuffleButton(playlist) {
   const shuffleButton = document.getElementById("shuffleButton");
   shuffleButton.onclick = () => {
@@ -183,23 +184,22 @@ window.onclick = function (event) {
 
 // Filter and show playlists based on search query
 function handleSearching(query) {
-  const reaffirmLower = query.toLowerCase();
   const filteredPlaylists = playlists.filter(playlist =>
-    playlist.playlist_name.toLowerCase().includes(reaffirmLower) ||
-    playlist.playlist_author.toLowerCase().includes(reaffirmLower)
+    playlist.playlist_name.toLowerCase().includes(query) ||
+    playlist.playlist_author.toLowerCase().includes(query)
   );
   renderFilteredPlaylists(filteredPlaylists);
 }
 
-document.getElementById("searchInput").addEventListener("input", (e) => {
-  handleSearching(e.target.value);
+// Handle buttons for search
+document.getElementById("searchBar").addEventListener("submit", function (e) {
+  e.preventDefault();
+  handleSearching(searchInput.value.toLowerCase());
 });
 
-document.getElementById("searchInput").addEventListener("keydown", function (e) {
-  if (e.key === "Enter") {
-    e.preventDefault();
-    return false;
-  }
+document.getElementById("clearSearch").addEventListener("click", () => {
+  searchInput.value = "";
+  renderFilteredPlaylists(playlists);
 });
 
 // Handle sorting logic when dropdown option is selected

@@ -24,16 +24,16 @@
     </header>
 
     <main>
-      <section class="search-bar">
-        <form role="search">
-          <label for="searchInput" class="visually-hidden"
-            >Search Playlists:</label
-          >
+      <section class="search-bar-box">
+        <form role="search" id="searchBar">
+          <label for="searchInput">Search Playlists:</label>
           <input
             type="search"
             id="searchInput"
             placeholder="By name or creator..."
           />
+          <button type="submit">Search</button>
+          <button type="button" id="clearSearch">Clear</button>
         </form>
       </section>
 
