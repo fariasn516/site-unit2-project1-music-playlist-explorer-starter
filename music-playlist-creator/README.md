@@ -93,7 +93,7 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
     - [x] Author
     - [x] Songs
   - [x] The playlist grid view and playlist detail modal should update to display any changes (see Required Features, Criterion 1 & 2).
-  - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** For ease of grading, please show yourself:
+  - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** For ease of grading, please show yourself:
     - [x] Editing all of a playlist's features (name, creator, AND songs)
     - [x] Editing some of a playlist's features (name, creator, OR songs) 
 
