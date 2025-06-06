@@ -81,17 +81,17 @@ function handleLikeFeature(button, likeCount, playlist) {
 
 // Creates an unliked button
 function createUnlikedButton(likeCount, playlist) {
-  const button = document.createElement("button");
-  button.className = "like-button";
-  button.textContent = "♡ ";
-  button.dataset.liked = "false";
+  const unlikedButton = document.createElement("button");
+  unlikedButton.className = "like-button";
+  unlikedButton.textContent = "♡ ";
+  unlikedButton.dataset.liked = "false";
 
-  button.addEventListener("click", (e) => {
+  unlikedButton.addEventListener("click", (e) => {
     e.stopPropagation();
-    handleLikeFeature(button, likeCount, playlist);
+    handleLikeFeature(unlikedButton, likeCount, playlist);
   });
 
-  return button;
+  return unlikedButton;
 }
 
 // Creates a filled heart image button
@@ -260,18 +260,17 @@ function createEditableSongInputs(song) {
 // Handle form submission for editing playlist
 document.getElementById("editPlaylistForm").addEventListener("submit", function (e) {
   e.preventDefault();
-
   managedPlaylist.playlist_name = document.getElementById("editPlaylistName").value;
   managedPlaylist.playlist_author = document.getElementById("editPlaylistAuthor").value;
 
-  const updatedSongs = [];
+  const editedSongs = [];
   document.querySelectorAll("#editSongInputsContainer .song-input").forEach((section, index) => {
     const name = section.querySelector(".song-name").value;
     const artist = section.querySelector(".song-artist").value;
     const album = section.querySelector(".song-album").value;
-    
+
     const originalSong = managedPlaylist.songs[index];
-    updatedSongs.push({
+    editedSongs.push({
       name,
       artist,
       album,
@@ -280,7 +279,7 @@ document.getElementById("editPlaylistForm").addEventListener("submit", function 
     });
   });
 
-  managedPlaylist.songs = updatedSongs;
+  managedPlaylist.songs = editedSongs;
   editPlaylistModal.style.display = "none";
   renderFilteredPlaylists(playlists);
 });
