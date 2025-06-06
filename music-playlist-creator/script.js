@@ -5,6 +5,9 @@ const playlistSongs = document.getElementById("playlistSongs");
 const likeIcon = document.getElementsByClassName("likeIcon")
 const shuffleButton = document.getElementById("shuffleButton");
 const searchInput = document.getElementById("searchInput");
+const editPlaylistModal = document.getElementById("editPlaylistModal");
+const addPlaylistModal = document.getElementById("addNewPlaylistModal");
+let managedPlaylist = null;
 let playlists = [];
 
 // Load all playlists from the JSON file and render them to the page
@@ -31,11 +34,14 @@ function createPlaylistCard(playlist) {
     <h3>${playlist.playlist_name}</h3>
     <p class="creator">by ${playlist.playlist_author}</p>
     <p class="date-added">added on ${playlist.dateAdded}</p>
+    <button class="edit-playlist-button">Edit</button>
   </div>
+
   `;
 
   createLikeFeature(playlist, card)
   handleDeletePlaylist(playlist, card);
+  handleEditPlaylist(playlist, card);
   playlistCards.appendChild(card);
 }
 
@@ -111,8 +117,7 @@ function createLikedButton(likeCount, playlist) {
 
 // Handle deleting a playlist from the list and the UI
 function handleDeletePlaylist(playlist, card) {
-  const deleteButton = card.querySelector(".delete-playlist-button");
-  deleteButton.addEventListener("click", (e) => {
+  card.querySelector(".delete-playlist-button").addEventListener("click", (e) => {
     e.stopPropagation();
     playlists = playlists.filter(p => p.playlistID !== playlist.playlistID);
     card.remove();
@@ -170,12 +175,12 @@ function shuffleSongList(songs) {
   return songs;
 }
 
-// Close modal when 'X' is clicked
+// Close playlist modal when 'X' is clicked
 span.onclick = function () {
   modal.style.display = "none";
 }
 
-// Close modal if user clicks outside of it
+// Close playlist modal if user clicks outside of it
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -218,6 +223,78 @@ function handleSort(optionSelected) {
 document.getElementById("sortOptions").addEventListener("change", (e) => {
   handleSort(e.target.value);
 });
+// Handle edit playlist feature when clicked
+function handleEditPlaylist(playlist, card) {
+  card.querySelector(".edit-playlist-button").addEventListener("click", (e) => {
+    e.stopPropagation();
+    editPlaylist(playlist);
+  });
+}
+
+// Opens the edit Modal and handles the editing logic
+function editPlaylist(playlist) {
+  managedPlaylist = playlist;
+  document.getElementById("editPlaylistName").value = playlist.playlist_name;
+  document.getElementById("editPlaylistAuthor").value = playlist.playlist_author;
+  const container = document.getElementById("editSongInputsContainer");
+  playlist.songs.forEach(song => {
+    container.appendChild(createEditableSongInputs(song));
+  });
+
+  editPlaylistModal.style.display = "block";
+}
+
+// Creates song input fields with existing data
+function createEditableSongInputs(song) {
+  const editedSong = document.createElement("section");
+  editedSong.className = "song-input";
+  editedSong.innerHTML = `
+    <input type="text" class="song-name" placeholder="Name" value="${song.name}" required />
+    <input type="text" class="song-artist" placeholder="Artist" value="${song.artist}" required />
+    <input type="text" class="song-album" placeholder="Album" value="${song.album}" required />
+  `;
+  return editedSong;
+}
+
+// Handle form submission for editing playlist
+document.getElementById("editPlaylistForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  managedPlaylist.playlist_name = document.getElementById("editPlaylistName").value;
+  managedPlaylist.playlist_author = document.getElementById("editPlaylistAuthor").value;
+
+  const updatedSongs = [];
+  document.querySelectorAll("#editSongInputsContainer .song-input").forEach((section, index) => {
+    const name = section.querySelector(".song-name").value;
+    const artist = section.querySelector(".song-artist").value;
+    const album = section.querySelector(".song-album").value;
+    
+    const originalSong = managedPlaylist.songs[index];
+    updatedSongs.push({
+      name,
+      artist,
+      album,
+      duration: originalSong.duration,
+      image: originalSong.image
+    });
+  });
+
+  managedPlaylist.songs = updatedSongs;
+  editPlaylistModal.style.display = "none";
+  renderFilteredPlaylists(playlists);
+});
+
+// Close edit modal when 'X' is clicked
+document.querySelector(".close-edit").onclick = () => {
+  editPlaylistModal.style.display = "none";
+};
+
+// Close edit modal if user clicks outside of it
+window.onclick = (event) => {
+  if (event.target == editPlaylistModal) {
+    editPlaylistModal.style.display = "none";
+  }
+};
 
 // Renders a list of playlists to the page (used after filtering/sorting)
 function renderFilteredPlaylists(filteredList) {
@@ -225,5 +302,73 @@ function renderFilteredPlaylists(filteredList) {
   filteredList.forEach(playlist => createPlaylistCard(playlist));
 }
 
-// Load everything on page load
+// Handle add playlist form submission
+document.getElementById("addNewPlaylistForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const newPlaylist = buildNewPlaylistFromForm();
+  playlists.push(newPlaylist);
+  addPlaylistModal.style.display = "none";
+  renderFilteredPlaylists(playlists);
+  document.getElementById("addNewPlaylistForm").reset();
+});
+
+// Build a new playlist object based on input values
+function buildNewPlaylistFromForm() {
+  const songInputs = document.querySelectorAll(".song-input");
+  const songs = [];
+
+  songInputs.forEach(songDiv => {
+    const name = songDiv.querySelector(".song-name").value;
+    const artist = songDiv.querySelector(".song-artist").value;
+    const album = songDiv.querySelector(".song-album").value;
+    const duration = songDiv.querySelector(".song-duration").value;
+    const image = songDiv.querySelector(".song-image").value;
+
+    songs.push({ name, artist, album, duration, image });
+  });
+
+  return {
+    playlistID: playlists.length + 1,
+    playlist_name: document.getElementById("newPlaylistName").value,
+    playlist_author: document.getElementById("newPlaylistAuthor").value,
+    playlist_art: document.getElementById("newPlaylistArt").value,
+    dateAdded: document.getElementById("newPlaylistDate").value,
+    likes: 0,
+    songs: songs
+  };
+}
+
+// Handle "Add Another Song" button click
+document.getElementById("addMoreSongs").addEventListener("click", () => {
+  const container = document.getElementById("songInputsContainer");
+  const songDiv = document.createElement("div");
+  songDiv.className = "song-input";
+  songDiv.innerHTML = `
+    <input type="text" placeholder="Song Name" class="song-name" required />
+    <input type="text" placeholder="Artist" class="song-artist" required />
+    <input type="text" placeholder="Album" class="song-album" required />
+    <input type="text" placeholder="Duration" class="song-duration" required />
+    <input type="text" placeholder="Image URL" class="song-image" required />
+  `;
+  container.appendChild(songDiv);
+});
+
+// Opens the add modal when Add Playlist is clicked
+document.getElementById("addPlaylistButton").addEventListener("click", () => {
+  addPlaylistModal.style.display = "block";
+});
+
+// Closes the add modal when 'X' is clicked
+document.querySelector(".close-add").addEventListener("click", () => {
+  addPlaylistModal.style.display = "none";
+});
+
+// Closes the add modal if user clicks outside the modal
+window.addEventListener("click", (e) => {
+  if (e.target === addPlaylistModal) {
+    addPlaylistModal.style.display = "none";
+  }
+});
+
 loadPlaylists();

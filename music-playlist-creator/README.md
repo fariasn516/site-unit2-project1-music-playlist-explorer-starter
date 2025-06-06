@@ -2,9 +2,9 @@
 
 Submitted by: **Nancy Farias**
 
-Estimated time spent: **15** hours spent in total
+Estimated time spent: **20** hours spent in total
 
-Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD_LINK_HERE)
+Deployed Application (**required**): [Music Playlist Explorer Deployed Site](https://site-unit2-project1-music-playlist-qfki.onrender.com)
 
 ### Application Features
 
@@ -73,35 +73,35 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD
 
 #### STRETCH FEATURES
 
-- [ ] **Add New Playlists**
-  - [ ] Allow users to create new playlists.
-  - [ ] Using a form, users can input playlist:
-    - [ ] Name
-    - [ ] Author
-    - [ ] Cover image
-    - [ ] Add one or more songs to the playlist, specifying the song's:
-      - [ ] Title
-      - [ ] Artist
-  - [ ] The resulting playlist should display in the grid view.
+- [x] **Add New Playlists**
+  - [x] Allow users to create new playlists.
+  - [x] Using a form, users can input playlist:
+    - [x] Name
+    - [x] Author
+    - [x] Cover image
+    - [x] Add one or more songs to the playlist, specifying the song's:
+      - [x] Title
+      - [x] Artist
+  - [x] The resulting playlist should display in the grid view.
   - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** For ease of grading, please show yourself adding at least two songs to the playlist. 
 
-- [ ] **Edit Existing Playlists**
-  - [ ] Enable users to modify the details of existing playlists.
-  - [ ] Add an edit button to each playlist tile.
-  - [ ] Users can update the playlist:
-    - [ ] Name
-    - [ ] Author
-    - [ ] Songs
-  - [ ] The playlist grid view and playlist detail modal should update to display any changes (see Required Features, Criterion 1 & 2).
+- [] **Edit Existing Playlists**
+  - [x] Enable users to modify the details of existing playlists.
+  - [x] Add an edit button to each playlist tile.
+  - [x] Users can update the playlist:
+    - [x] Name
+    - [x] Author
+    - [x] Songs
+  - [x] The playlist grid view and playlist detail modal should update to display any changes (see Required Features, Criterion 1 & 2).
   - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** For ease of grading, please show yourself:
-    - [ ] Editing all of a playlist's features (name, creator, AND songs)
-    - [ ] Editing some of a playlist's features (name, creator, OR songs) 
+    - [x] Editing all of a playlist's features (name, creator, AND songs)
+    - [x] Editing some of a playlist's features (name, creator, OR songs) 
 
 - [X] **Delete Playlists**
   - [X] Add a delete button to each playlist tile within the grid view.
   - [X] When clicked, the playlist is removed from the playlist grid view.
 
-- [] **Search Functionality**
+- [x] **Search Functionality**
   - [x] Implement a search bar that allows users to filter playlists by:
     - [x] Name 
     - [x] Author
@@ -115,9 +115,9 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD
   - [x] User can click the clear button. When clicked:
     - [x] All text in the text input field is deleted
     - [x] All playlists in the `data.json` file are displayed in a grid view
-    - [ ] **Optional:** If the Add Playlist, Edit Existing Playlist, or Delete Playlist stretch features were implemented:
-      - [ ] If users can add a playlist, added playlists should be included in search results.
-      - [ ] If users can edit a playlist, search results should reflect the latest edits to each playlist.
+    - [x] **Optional:** If the Add Playlist, Edit Existing Playlist, or Delete Playlist stretch features were implemented:
+      - [x] If users can add a playlist, added playlists should be included in search results.
+      - [x] If users can edit a playlist, search results should reflect the latest edits to each playlist.
       - [x] If users can delete a playlist, deleted playlists should no longer be included in search results.
       - **Note:** You will not be graded on the implementation of this optional subfeature to keep your grade of this stretch feature independent of your implementation of other stretch features. However, we highly suggest including this in your implementation to model realistic behavior of real applications. 
 

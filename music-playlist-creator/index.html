@@ -38,7 +38,7 @@
       </section>
 
       <section class="sorting-function">
-        <form class="sort-form">
+        <form id= "sortFunction" class="sort-form">
           <label for="sortOptions">Sort by:</label>
           <select id="sortOptions" name="sort">
             <option value="default">Default</option>
@@ -49,10 +49,12 @@
         </form>
       </section>
 
+      <button id="addPlaylistButton">Add Playlist!</button>
+
       <section id="playlist-cards"></section>
     </main>
 
-    <!-- Modal Structure -->
+    <!-- Playlist Modal Structure -->
     <section id="playlistModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -69,6 +71,89 @@
         <ul id="playlistSongs" class="song-list"></ul>
       </div>
     </section>
+
+    <!-- Edit Playlist Modal Structure -->
+    <div id="editPlaylistModal" class="modal">
+      <div class="modal-content">
+        <span class="close-edit">&times;</span>
+        <h2>Edit Playlist</h2>
+        <form id="editPlaylistForm">
+          <label for="editPlaylistName">Playlist Name:</label>
+          <input type="text" id="editPlaylistName" required />
+          <br />
+          <label for="editPlaylistAuthor">Author:</label>
+          <input type="text" id="editPlaylistAuthor" required />
+          <br />
+          <div id="editSongInputsContainer">
+            <h3>Edit Songs</h3>
+          </div>
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Add Playlist Modal -->
+    <div id="addNewPlaylistModal" class="modal">
+      <div class="modal-content">
+        <span class="close-add">&times;</span>
+        <h2>Add New Playlist</h2>
+
+        <form id="addNewPlaylistForm">
+          <label>Playlist Name:</label>
+          <input id="newPlaylistName" type="text" required />
+
+          <label>Author:</label>
+          <input id="newPlaylistAuthor" type="text" required />
+
+          <label>Cover Image:</label>
+          <input id="newPlaylistArt" type="text" required />
+
+          <label>Date Added:</label>
+          <input id="newPlaylistDate" type="date" required />
+
+          <div id="songInputsContainer">
+            <h3>Songs</h3>
+            <div class="song-input">
+              <input
+                class="song-name"
+                type="text"
+                placeholder="Song Name"
+                required
+              />
+              <input
+                class="song-artist"
+                type="text"
+                placeholder="Artist"
+                required
+              />
+              <input
+                class="song-album"
+                type="text"
+                placeholder="Album"
+                required
+              />
+              <input
+                class="song-duration"
+                type="text"
+                placeholder="Duration"
+                required
+              />
+              <input
+                class="song-image"
+                type="text"
+                placeholder="Image URL"
+                required
+              />
+            </div>
+          </div>
+
+          <button id="addMoreSongs" type="button">Add Another Song</button>
+          <button class="submit-new-playlistbutton" type="submit">
+            Add Playlist
+          </button>
+        </form>
+      </div>
+    </div>
 
     <footer>
       <p>&copy; 2025 Music Playlist Explorer by Nancy F.</p>

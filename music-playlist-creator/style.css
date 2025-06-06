@@ -76,6 +76,21 @@ main {
   margin-left: 10px;
 }
 
+#addPlaylistButton {
+  padding: 10px;
+  margin: 15px 0 0 18px;
+  background-color: #f8cce9;
+  color: black;
+  border: 1px solid #e5b6d2;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#addPlaylistButton:hover {
+  background-color: #f3b9e1;
+}
+
 footer {
   background-color: white;
   color: grey;
@@ -91,13 +106,13 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 60px;
-  padding: 50px;
+  padding: 40px;
 }
 
 .playlist-card {
   background-color: white;
   width: 300px;
-  height: 400px;
+  height: 430px;
   text-align: left;
   border-radius: 10px;
   box-shadow: 0 1px 5px black;
@@ -216,7 +231,23 @@ footer {
   color: #666;
 }
 
-.close {
+.edit-playlist-button {
+  background-color: #f8cce9;
+  color: black;
+  border: 1px solid #e5b6d2;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.edit-playlist-button:hover {
+  background-color: #f3b9e1;
+}
+
+.close,
+.close-edit,
+.close-add {
   color: #aaa;
   float: right;
   margin-bottom: 20px;
@@ -224,7 +255,11 @@ footer {
   font-weight: bold;
 }
 .close:hover,
-.close:focus {
+.close:focus,
+.close-edit:hover,
+.close-edit:hover,
+.close-add:hover,
+.close-add:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -278,15 +313,11 @@ footer {
 
 .song-duration {
   min-width: 60px;
-  text-align: right;
   color: #333;
-  font-size: 16px;
   align-self: center;
-  margin-left: 15px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 100%;
 }
 
 #featured-page {
@@ -341,4 +372,17 @@ footer {
   font-size: 12px;
   color: grey;
   margin: 2px;
+}
+
+#addNewPlaylistForm input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.song-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
