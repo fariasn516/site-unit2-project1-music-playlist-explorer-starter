@@ -2,7 +2,7 @@
 
 Submitted by: **Nancy Farias**
 
-Estimated time spent: **20** hours spent in total
+Estimated time spent: **15** hours spent in total
 
 Deployed Application (**required**): [Music Playlist Explorer Deployed Site](https://site-unit2-project1-music-playlist-qfki.onrender.com)
 
@@ -130,8 +130,15 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](htt
 
 ### Walkthrough Video
 
-<div style="position: relative; padding-bottom: 64.55089820359281%; height: 0;"><iframe src="https://www.loom.com/embed/46f789ea53e34ef882cebdbb846ecbc6?sid=a578b4a8-e9f4-4c53-89ec-361d8debba87" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
+<div>
+    <a href="https://www.loom.com/share/46f789ea53e34ef882cebdbb846ecbc6">
+      <p>Music Playlist Explorer Features 🎶 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/46f789ea53e34ef882cebdbb846ecbc6">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/46f789ea53e34ef882cebdbb846ecbc6-3b60768e0c4cb15e-full-play.gif">
+    </a>
+  </div>
+  
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
