@@ -237,6 +237,7 @@ function editPlaylist(playlist) {
   document.getElementById("editPlaylistName").value = playlist.playlist_name;
   document.getElementById("editPlaylistAuthor").value = playlist.playlist_author;
   const container = document.getElementById("editSongInputsContainer");
+  container.innerHTML = "";
   playlist.songs.forEach(song => {
     container.appendChild(createEditableSongInputs(song));
   });
